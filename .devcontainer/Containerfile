@@ -1,0 +1,16 @@
+# Imagen base de Node.js 26 (basada en Debian Trixie, igual que Debian 13)
+# Referencia completa del repositorio para que Podman la resuelva sin ambigüedad.
+FROM docker.io/library/node:26
+
+# Instalar utilidades básicas de desarrollo
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        git \
+        curl \
+        ca-certificates \
+        sudo \
+    && rm -rf /var/lib/apt/lists/*
+
+# El usuario "node" (uid 1000) ya viene definido en la imagen oficial.
+# Se usa como usuario del contenedor para evitar problemas de permisos
+# con los ficheros montados desde el host.
+ENV HOME=/home/node
