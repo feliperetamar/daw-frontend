@@ -1,0 +1,29 @@
+{
+  "name": "daw-frontend",
+  "version": "1.0.0",
+  "description": "Desarrollo WEB para las prácticas de la asignatura de Desarrollo Cliente Web de DAW",
+  "homepage": "https://github.com/feliperetamar/daw-frontend#readme",
+  "bugs": {
+    "url": "https://github.com/feliperetamar/daw-frontend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/feliperetamar/daw-frontend.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@eslint/css": "^2.0.1",
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^2.1.1",
+    "@eslint/markdown": "^8.0.3",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "typescript-eslint": "^8.72.0"
+  }
+}
