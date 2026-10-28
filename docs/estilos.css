@@ -1,0 +1,174 @@
+body {
+  background-color: #fdf5e6;
+  color: #333333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.contenedor {
+  width: 1024px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-collapse: collapse;
+}
+
+.cabecera {
+  background-color: #8b4513;
+  height: 120px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cabecera-tabla {
+  width: 980px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.titulo-principal {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitulo {
+  color: #fdf5e6;
+  font-size: 15px;
+  font-style: italic;
+  margin: 5px 0 0 0;
+}
+
+.selector-idioma {
+  color: #ffffff;
+  font-size: 14px;
+  text-align: right;
+}
+
+.enlace-idioma {
+  color: #fdf5e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.enlace-idioma:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  background-color: #d2691e;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.menu-tabla {
+  width: 980px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.menu-enlace {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  padding: 10px 5px;
+}
+
+.menu-categoria {
+  color: #fff8dc;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.menu-enlace:hover {
+  background-color: #8b4513;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.contenido {
+  padding: 20px;
+  vertical-align: top;
+}
+
+.contenido-tabla {
+  width: 984px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.caja-animacion {
+  background-color: #fdf5e6;
+  text-align: center;
+  padding: 15px;
+}
+
+.titulo-seccion {
+  color: #8b4513;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.imagen-animacion {
+  width: 400px;
+  height: 220px;
+  border: 1px solid #8b4513;
+  margin: 10px 0;
+}
+
+.texto-pie-imagen {
+  color: #555555;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.columna-texto {
+  width: 60%;
+  vertical-align: top;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.texto-justificado {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.columna-destacado {
+  width: 40%;
+  vertical-align: top;
+  background-color: #fafafa;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #eeeeee;
+}
+
+.imagen-producto {
+  width: 200px;
+  height: 150px;
+  border: 1px solid #cccccc;
+  margin: 10px 0;
+}
+
+.pie {
+  background-color: #8b4513;
+  height: 100px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.pie-tabla {
+  width: 980px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.enlace-pie {
+  color: #fdf5e6;
+  text-decoration: underline;
+}
