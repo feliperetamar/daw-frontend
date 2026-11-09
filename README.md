@@ -15,22 +15,22 @@ motor de contenedores y **VS Code** con la extensión Dev Containers.
 
 Sin IA, solo autocompletado clásico y herramientas de corrección/compilación:
 
-| Extensión | Para qué sirve |
-|---|---|
-| `ritwickdey.LiveServer` | Servidor local con recarga en vivo (cambios en tiempo real) |
-| `dbaeumer.vscode-eslint` | Corrección y linting de JavaScript y TypeScript |
-| `esbenp.prettier-vscode` | Formateo automático de código |
-| `ecmel.vscode-html-css` | Autocompletado de CSS dentro de HTML |
-| `Zignd.html-css-class-completion` | Autocompletado de clases CSS en HTML |
-| `formulahendry.auto-rename-tag` | Renombra la etiqueta de apertura/cierre a la vez |
-| `christian-kohler.path-intellisense` | Autocompletado de rutas de archivos |
-| `christian-kohler.npm-intellisense` | Autocompletado de imports de paquetes npm |
-| `xabikos.JavaScriptSnippets` | Snippets de JavaScript (ES6) |
-| `formulahendry.code-runner` | Ejecutar código al vuelo |
-| `wix.vscode-import-cost` | Muestra el tamaño de cada import |
-| `eamodio.gitlens` | Integración con Git (blame, historial, etc.) |
-| `vscode-icons-team.vscode-icons` | Iconos para los tipos de archivo |
-| `yzhang.markdown-all-in-one` | Editar ficheros Markdown/README |
+| Extensión                            | Para qué sirve                                              |
+| ------------------------------------ | ----------------------------------------------------------- |
+| `ritwickdey.LiveServer`              | Servidor local con recarga en vivo (cambios en tiempo real) |
+| `dbaeumer.vscode-eslint`             | Corrección y linting de JavaScript y TypeScript             |
+| `esbenp.prettier-vscode`             | Formateo automático de código                               |
+| `ecmel.vscode-html-css`              | Autocompletado de CSS dentro de HTML                        |
+| `Zignd.html-css-class-completion`    | Autocompletado de clases CSS en HTML                        |
+| `formulahendry.auto-rename-tag`      | Renombra la etiqueta de apertura/cierre a la vez            |
+| `christian-kohler.path-intellisense` | Autocompletado de rutas de archivos                         |
+| `christian-kohler.npm-intellisense`  | Autocompletado de imports de paquetes npm                   |
+| `xabikos.JavaScriptSnippets`         | Snippets de JavaScript (ES6)                                |
+| `formulahendry.code-runner`          | Ejecutar código al vuelo                                    |
+| `wix.vscode-import-cost`             | Muestra el tamaño de cada import                            |
+| `eamodio.gitlens`                    | Integración con Git (blame, historial, etc.)                |
+| `vscode-icons-team.vscode-icons`     | Iconos para los tipos de archivo                            |
+| `yzhang.markdown-all-in-one`         | Editar ficheros Markdown/README                             |
 
 ## Requisitos previos
 
@@ -76,7 +76,7 @@ Debe devolver `OK`.
 ### 3. Configurar VS Code para usar Podman
 
 Abre los ajustes de usuario de VS Code
-(`Ctrl+Shift+P` → *Preferences: Open User Settings (JSON)*,
+(`Ctrl+Shift+P` → _Preferences: Open User Settings (JSON)_,
 que es `~/.config/Code/User/settings.json`) y añade:
 
 ```json
@@ -164,7 +164,7 @@ Instala en VS Code las extensiones **WSL** (`ms-vscode-remote.remote-wsl`) y
 Conecta a WSL: `Ctrl+Shift+P` → **WSL: Connect to WSL**.
 
 Dentro de la sesión de WSL, abre los ajustes de usuario
-(`Ctrl+Shift+P` → *Preferences: Open User Settings (JSON)`) y añade lo mismo
+(`Ctrl+Shift+P` → \*Preferences: Open User Settings (JSON)`) y añade lo mismo
 que en Debian:
 
 ```json
