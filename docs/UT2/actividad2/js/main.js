@@ -1,4 +1,22 @@
-// Factorial de un número positivo.
+/**
+ * Actividad 2 — Documentación con JSDoc.
+ *
+ * Enunciado de los ejercicios:
+ * 1. Factorial de un número positivo.
+ * 2. Calcula la media aritmética de una lista de números.
+ * 3. Calcula si una cadena de texto es o no un palíndromo. Ejemplo de palíndromo complejo: "La ruta nos aporto otro paso natural".
+ * 4. Calcular si un DNI pasado como cadena es o no válido. Se debe comprobar tanto el número de caracteres adecuado (8 numéricos y 1 carácter) como si el carácter es el correcto.
+ *
+ * @author Luis-Felipe Sánchez-Escobar Retamar
+ */
+
+/**
+ * Factorial de un número positivo.
+ *
+ * @function factorial
+ * @param {number} n - Número positivo del que se calcula el factorial.
+ * @returns {number|string} El factorial de `n` o el error en texto.
+ */
 function factorial(n) {
   if (n < 0) {
     return "Error: el número debe ser positivo.";
@@ -18,8 +36,20 @@ console.log("El factorial de -3 es: " + factorial(-3)); // Salida: Error: el nú
 console.log("El factorial de 0 es: " + factorial(0)); // Salida: 1
 console.log(" ");
 
-// Calcula la media aritmética de una lista de números
+/**
+ * Lista de números de ejemplo para el siguiente ejercicio.
+ *
+ * @var {Array<number>} numeros
+ */
 let numeros = [10, 25, 3, 8, 17];
+
+/**
+ * Calcula la media aritmética de una lista de números.
+ *
+ * @function calcularMedia
+ * @param {Array<number>} listaNumeros - Lista de números sobre la que se calcula la media.
+ * @returns {number|string} La media aritmética de la lista, o un mensaje de error si la lista está vacía.
+ */
 function calcularMedia(listaNumeros) {
   if (listaNumeros.length === 0) {
     return "Error: la lista de números está vacía.";
@@ -35,8 +65,20 @@ console.log("La media de [10, 25, 3, 8, 17] es: " + calcularMedia(numeros)); // 
 console.log("La media de [] es: " + calcularMedia([])); // Salida: Error: la lista de números está vacía.
 console.log(" ");
 
-// Calcula si una cadena de texto es o no un palíndromo. Ejemplo de palíndromo complejo: "La ruta nos aporto otro paso natural".
+/**
+ * Cadena de texto de ejemplo (palíndromo complejo) para siguiente ejercicio.
+ *
+ * @var {string} palindromo
+ */
 let palindromo = "La ruta nos aporto otro paso natural";
+
+/**
+ * Calcula si una cadena de texto es o no un palíndromo. Ejemplo de palíndromo complejo: "La ruta nos aporto otro paso natural".
+ *
+ * @function esPalindromo
+ * @param {string} cadena - Cadena de texto que se quiere comprobar.
+ * @returns {boolean} `true` si la cadena es un palíndromo, `false` en caso contrario.
+ */
 function esPalindromo(cadena) {
   // Eliminamos espacios y convertimos a minúsculas
   let cadenaLimpia = cadena.replace(/\s+/g, "").toLowerCase();
@@ -49,32 +91,13 @@ console.log(`"Hola mundo" es un palíndromo: ${esPalindromo("Hola mundo")}`);
 console.log(`"Oro" es un palíndromo: ${esPalindromo("Oro")}`);
 console.log(" ");
 
-//Calcular si un DNI pasado como cadena es o no valido. Se debe comprobar tanto el número de caracteres adecuado (8 numéricos y 1 carácter) y si el carácter es el correcto.
-// sigo los pasos que se indican en la web del ministerio:
-// https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/tramites-y-gestiones/dni/calculo-del-digito-de-control-del-nif-nie/
-
-// declaro las letras según el orden indicado en la web del ministerio
-const letras = "TRWAGMYFPDXBNJZSQVHLCKE";
-
-// limpio el DNI de espacios y lo paso a mayúsculas
-function normalizarDNI(dni) {
-  return dni.trim().toUpperCase();
-}
-
-// compruebo que el DNI tiene 8 números y 1 letra
-function esFormatoDNIValido(dni) {
-  const regex = /^\d{8}[A-Z]$/;
-  return regex.test(dni);
-}
-
-// calculo la letra correcta a partir del número del DNI
-function calcularLetraCorrecta(dni) {
-  const numero = parseInt(dni.slice(0, 8), 10);
-  const resto = numero % 23;
-  return letras[resto];
-}
-
-// función principal que comprueba si un DNI es válido
+/**
+ * Calcular si un DNI pasado como cadena es o no válido. Se debe comprobar tanto el número de caracteres adecuado (8 numéricos y 1 carácter) como si el carácter es el correcto.
+ *
+ * @function esDniValido
+ * @param {string} dni - Cadena del DNI a comprobar.
+ * @returns {boolean} `true` si el DNI es válido, `false` en caso contrario.
+ */
 function esDniValido(dni) {
   dni = normalizarDNI(dni);
 
@@ -86,6 +109,52 @@ function esDniValido(dni) {
   }
 
   return true; // DNI válido
+}
+
+// Se siguen los pasos indicados en la web del Ministerio del Interior:
+// https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/tramites-y-gestiones/dni/calculo-del-digito-de-control-del-nif-nie/
+
+/**
+ * Letras de control del DNI en el orden indicado en la web del Ministerio del Interior.
+ *
+ * @constant {string} letras
+ */
+const letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+
+/**
+ * Limpia el DNI de espacios y lo pasa a mayúsculas.
+ *
+ * @function normalizarDNI
+ * @param {string} dni - Cadena del DNI a normalizar.
+ * @returns {string} El DNI normalizado (sin espacios y en mayúsculas).
+ */
+function normalizarDNI(dni) {
+  return dni.trim().toUpperCase();
+}
+
+/**
+ * Comprueba que el DNI tiene 8 números y 1 letra.
+ *
+ * @function esFormatoDNIValido
+ * @param {string} dni - Cadena del DNI normalizada.
+ * @returns {boolean} `true` si el formato es correcto, `false` en caso contrario.
+ */
+function esFormatoDNIValido(dni) {
+  const regex = /^\d{8}[A-Z]$/;
+  return regex.test(dni);
+}
+
+/**
+ * Calcula la letra correcta a partir del número del DNI.
+ *
+ * @function calcularLetraCorrecta
+ * @param {string} dni - Cadena del DNI normalizada.
+ * @returns {string} La letra de control correcta para ese DNI.
+ */
+function calcularLetraCorrecta(dni) {
+  const numero = parseInt(dni.slice(0, 8), 10);
+  const resto = numero % 23;
+  return letras[resto];
 }
 
 // ejemplo de uso
