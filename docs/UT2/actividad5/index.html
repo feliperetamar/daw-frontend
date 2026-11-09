@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculadora sencilla</title>
+  </head>
+  <body>
+    <h1>Calculadora sencilla</h1>
+
+    <form id="formCalculadora">
+      <label>Valor 1: <input type="text" id="valor1" /></label>
+      <br />
+      <label>Valor 2: <input type="text" id="valor2" /></label>
+      <br />
+
+      <p>Elige la operación:</p>
+      <label><input type="radio" name="operacion" value="suma" checked /> Suma</label>
+      <br />
+      <label><input type="radio" name="operacion" value="resta" /> Resta</label>
+      <br />
+      <label><input type="radio" name="operacion" value="multiplicacion" /> Multiplicación</label>
+      <br />
+      <label><input type="radio" name="operacion" value="division" /> División</label>
+      <br />
+      <label><input type="radio" name="operacion" value="modulo" /> Módulo</label>
+      <br />
+      <label><input type="radio" name="operacion" value="potencia" /> Potencia</label>
+      <br />
+
+      <button type="button" id="botonCalcular">Calcular</button>
+    </form>
+
+    <h2>Resultado:</h2>
+    <h1 id="resultado"></h1>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

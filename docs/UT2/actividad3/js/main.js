@@ -1,5 +1,5 @@
 /**
- * Actividad 2 — Documentación con JSDoc.
+ * Actividades 3 y 4 — prácticas javascript y documentación con JSDoc.
  *
  * Enunciado de los ejercicios:
  * 1. Factorial de un número positivo.

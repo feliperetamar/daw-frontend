@@ -24,7 +24,8 @@ Realiza las siguientes funciones en JavaScript y muestra su funcionamiento:
 # Actividad 4. Documentación con JSDoc
 
 Utiliza JSDoc para documentar las funciones realizadas en la actividad anterior y genera la documentación.
-Actividad 5. Calculadora
+
+# Actividad 5. Calculadora
 
 Realiza un web que haga uso de JavaScript para operar como una calculadora simple.
 
