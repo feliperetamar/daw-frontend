@@ -59,8 +59,20 @@ function cambiarAPaginaYahoo() {
 const botonCambiarYahoo = document.getElementById("irAYahoo");
 botonCambiarYahoo.addEventListener("click", cambiarAPaginaYahoo);
 
+// Actividad 3. Objetos predefinidos navigator
+// sistema operativo y navegador del usuario
+const agenteUsuario = navigator.userAgent;
+
+// mostrar si se ha accedido a la web desde un móvil o no
+const esMovil =
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent,
+  );
+
 // Llamamos a la función para mostrar tamaños y la URL al cargar la página
 window.onload = () => {
   mostrarTamanios();
   mostrarURL();
+  const h2 = document.getElementById("infoAgente");
+  h2.innerHTML = `Agente de usuario: ${agenteUsuario}<br>Es móvil: ${esMovil}`;
 };
