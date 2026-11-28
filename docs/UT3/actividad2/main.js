@@ -45,5 +45,8 @@ function mostrarFechaActualMas20Dias() {
 }
 
 window.onload = () => {
+  document
+    .getElementById("comprobarFecha")
+    .addEventListener("click", comprobarFecha);
   mostrarFechaActualMas20Dias();
 };

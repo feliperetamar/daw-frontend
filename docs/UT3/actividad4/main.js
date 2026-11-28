@@ -25,9 +25,17 @@ function mostrarNombre() {
       li.textContent = nombre;
       lista.appendChild(li);
     });
-  } else {
-    alert("No hay ningún nombre guardado en el localStorage.");
   }
+}
+
+// vaciar la lista de nombres guardados en el localStorage y en el ul con id "lista"
+function clearLista() {
+  localStorage.removeItem("nombres");
+  const lista = document.getElementById("lista");
+  lista.innerHTML = "";
+  // limpiar el div con id "nombreGuardado"
+  document.getElementById("nombreGuardado").innerHTML = "";
+  alert("Lista de nombres borrada.");
 }
 
 window.onload = function () {
@@ -36,4 +44,7 @@ window.onload = function () {
 
   // La función mostrarNombre se ejecuta directamente al cargar la página para mostrar los nombres guardados en el localStorage
   mostrarNombre();
+
+  // Añadir evento al botón "Borrar Lista"
+  document.getElementById("clearLista").addEventListener("click", clearLista);
 };

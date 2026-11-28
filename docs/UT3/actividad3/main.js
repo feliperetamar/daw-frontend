@@ -33,3 +33,9 @@ function procesarTexto() {
     "<br>El texto modificado es: " +
     textoModificado;
 }
+
+window.onload = () => {
+  document
+    .getElementById("procesarTexto")
+    .addEventListener("click", procesarTexto);
+};
